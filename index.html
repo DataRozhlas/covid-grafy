@@ -1,9 +1,31 @@
-# Covid grafy
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+    textarea {
+        width: 90%;
+        height: auto;
+    }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
+<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highmaps.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highcharts-more.min.js"></script>
+
+<h1>Covid grafy</h1>
 
 Přehled aktivně udržovaných covidových assetů.
 
-## Nemocní v Česku
+<h2>Nemocní v Česku</h2>
 
+<div id="corona_cz_akt"></div>
+<script src="https://data.irozhlas.cz/corona-map/cr-aktualni.js"></script>
+
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -12,21 +34,16 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
 <div id="corona_cz_akt"></div>
 <script src="https://data.irozhlas.cz/corona-map/cr-aktualni.js"></script>
+</textarea>
+
+<h2>Nemocní v okresech</h2>
 
 
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
-<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
-<div id="corona_cz_akt"></div>
-<script src="https://data.irozhlas.cz/corona-map/cr-aktualni.js"></script>
-```
+<div id="corona_okr_map"></div>
+<script src="https://data.irozhlas.cz/corona-map/mapa-okr-cz.js"></script>
 
-## Nemocní v okresech
 
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -35,20 +52,14 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
 <div id="corona_okr_map"></div>
 <script src="https://data.irozhlas.cz/corona-map/mapa-okr-cz.js"></script>
+</textarea>
 
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
-<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
-<div id="corona_okr_map"></div>
-<script src="https://data.irozhlas.cz/corona-map/mapa-okr-cz.js"></script>
-```
+<h2>Nakažení a mrtví dle věku</h2>
 
-## Nakažení a mrtví dle věku
+<div id="corona_cz_dec_age"></div>
+<script src="https://data.irozhlas.cz/corona-map/mrtvi-vek.js"></script>
 
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -57,20 +68,14 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
 <div id="corona_cz_dec_age"></div>
 <script src="https://data.irozhlas.cz/corona-map/mrtvi-vek.js"></script>
+</textarea>
 
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
-<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
-<div id="corona_cz_dec_age"></div>
-<script src="https://data.irozhlas.cz/corona-map/mrtvi-vek.js"></script>
-```
+<h2>Testy a případy, relativní změna</h2>
 
-## Testy a případy, relativní změna
+<div id="corona_cr_pct"></div>
+<script src="https://data.irozhlas.cz/corona-map/cr-pct.js"></script>
 
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -78,19 +83,14 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
 <div id="corona_cr_pct"></div>
 <script src="https://data.irozhlas.cz/corona-map/cr-pct.js"></script>
+</textarea>
 
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
-<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highmaps/6.0.3/highmaps.js"></script>
-<div id="corona_cr_pct"></div>
-<script src="https://data.irozhlas.cz/corona-map/cr-pct.js"></script>
-```
+<h2>Kapacity nemocnic</h2>
 
-## Kapacity nemocnic
+<div id="corona_nemocnice_vse"></div>
+<script src="https://data.irozhlas.cz/corona-map/nemocnice-vse.js"></script>
 
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -99,20 +99,14 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highcharts-more.min.js"></script>
 <div id="corona_nemocnice_vse"></div>
 <script src="https://data.irozhlas.cz/corona-map/nemocnice-vse.js"></script>
+</textarea>
 
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
-<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
-<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highcharts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highcharts-more.min.js"></script>
-<div id="corona_nemocnice_vse"></div>
-<script src="https://data.irozhlas.cz/corona-map/nemocnice-vse.js"></script>
-```
+<h2>Týdenní přehled</h2>
 
-## Týdenní přehled
+<div id="corona_cz_7"></div>
+<script src="https://data.irozhlas.cz/corona-map/cr-7.js"></script>
 
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
@@ -121,14 +115,48 @@ Přehled aktivně udržovaných covidových assetů.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highmaps.min.js"></script>
 <div id="corona_cz_7"></div>
 <script src="https://data.irozhlas.cz/corona-map/cr-7.js"></script>
+</textarea>
 
-```html
+<h2>Týden v ORP</h2>
+
+<div id="corona_orp_map"></div>
+<script src="https://data.irozhlas.cz/corona-map/mapa-orp.js"></script>
+
+<textarea readonly rows="10">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
 <link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
 <link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highmaps.min.js"></script>
-<div id="corona_cz_7"></div>
-<script src="https://data.irozhlas.cz/corona-map/cr-7.js"></script>
-```
+<div id="corona_orp_map"></div>
+<script src="https://data.irozhlas.cz/corona-map/mapa-orp.js"></script>
+</textarea>
+
+<h2>Očkování</h2>
+
+<div id="covid_vak_mun"></div>
+<script src="https://data.irozhlas.cz/corona-map/vak-kraje.js"></script>
+
+<textarea readonly rows="10">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
+<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highmaps.min.js"></script>
+<div id="covid_vak_mun"></div>
+<script src="https://data.irozhlas.cz/corona-map/vak-kraje.js"></script>
+</textarea>
+
+<div id="covid_vak_age"></div>
+<script src="https://data.irozhlas.cz/corona-map/vak-vek.js"></script>
+
+<textarea readonly rows="10">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text">
+<link href="https://fonts.googleapis.com/css2?family=Asap" rel="stylesheet">
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/style.css"/>
+<link rel="stylesheet" href="https://data.irozhlas.cz/corona-map/highcharts-style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.0.1/highmaps.min.js"></script>
+<div id="covid_vak_age"></div>
+<script src="https://data.irozhlas.cz/corona-map/vak-vek.js"></script>
+</textarea>
